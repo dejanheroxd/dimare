@@ -19,12 +19,12 @@ export default function ContactSec() {
         <div className="border-r border-gray-300 items-center justify-center flex-col flex">
           <div className="relative">
             <img
-              className="h-[65px] w-[150px] absolute top-[-38px]"
+              className="h-[65px] w-[150px] absolute left-[45px] top-[-38px]"
               src={fish}
               alt=""
             />
-            <p className="text-4xl text-fishDarkBlue lg:pt-16 pb-10 lg:pb-0">
-              THALASSA
+            <p className="text-[28px] text-fishDarkBlue lg:pt-16 pb-10 lg:pb-0">
+              IL MONDO DI MARE
             </p>
           </div>
           <div className="flex lg:pt-16 gap-x-4">
