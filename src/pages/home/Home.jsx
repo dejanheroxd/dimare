@@ -1,7 +1,7 @@
 import React from "react";
 import LandingPage from "./landingPage/LandingPage";
 import AboutSec from "./about-sec/AboutSec";
-import OpeningTime from "./openingTime-sec/openingTime";
+import OpeningTime from "./openingTime-sec/OpeningTime";
 import MenuSec from "./menu-sec/MenuSec";
 import ContactSec from "./contace-sec/ContactSec";
 
