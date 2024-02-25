@@ -3,7 +3,7 @@ import aboutFish from "../../../assets/aboutFish.jpg";
 
 export default function AboutSec() {
   return (
-    <div>
+    <div className="bg-[#EEF9FD] pb-4">
       <div className="p-4 pt-20">
         <img src={aboutFish} alt="" />
       </div>
