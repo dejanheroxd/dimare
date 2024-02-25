@@ -15,7 +15,7 @@ export default function AboutSec() {
         <p className="text-3xl pt-4 pb-8">
           Enjoy An Exceptional Journey of Taste
         </p>
-        <p className="text-gray-700">
+        <div className="text-gray-700">
           Our buzzy food-hall style concept is inspired by international dining
           styles, especially in Asia. Explore the following fast-action food
           stations as busy chefs perform.
@@ -27,7 +27,7 @@ export default function AboutSec() {
             spirits, beers and wines are all made with integrity and offer
             something for every guest.
           </p>
-        </p>
+        </div>
         <button className="bg-fishBlue text-white h-[50px] mt-9 px-6">
           READ MORE ABOUT US
         </button>
