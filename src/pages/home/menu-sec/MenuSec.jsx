@@ -4,14 +4,14 @@ import lob from "../../../assets/lob.png";
 
 export default function MenuSec() {
   return (
-    <div className="bg-[#F7F7F4] pb-10">
-      <div className=" text-center pt-16 lg:pb-20 pb-10">
+    <div className="bg-[#F7F7F4] pb-10 relative overflow-hidden">
+      <div className=" text-center overflow-hidden pt-16 lg:pb-20 pb-10">
         <div className="text-center">
           <p className="text-[#001C58]">TASTE THE BEST THAT SURPRISE YOU</p>
         </div>
         <img
           src={lob}
-          className="absolute right-[-140px] h-[120px] w-[270px]"
+          className="absolute overflow-hidden right-[-140px] h-[120px] w-[270px]"
           alt=""
         />
         <p className="text-2xl pb-1 pt-3">OUR MENU</p>

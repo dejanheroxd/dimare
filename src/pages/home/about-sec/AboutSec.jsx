@@ -4,7 +4,7 @@ import crab from "../../../assets/crab.png";
 
 export default function AboutSec() {
   return (
-    <div className="bg-[#EEF9FD] pb-4">
+    <div className="bg-[#EEF9FD] pb-4 overflow-hidden">
       <div className="p-4 pt-20">
         <img src={aboutFish} alt="" />
       </div>
@@ -17,7 +17,7 @@ export default function AboutSec() {
           Enjoy An Exceptional Journey of Taste
         </p>
         <img
-          className="absolute right-[-170px] rotate-[-50deg] top-4"
+          className="absolute w-[240px] h-[110px] right-[-90px] rotate-[-50deg] top-4"
           src={crab}
           alt=""
         />
