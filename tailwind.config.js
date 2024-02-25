@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         fishBlue: "#79A1BB",
+        fishDarkBlue: "#0D395E",
       },
     },
   },
