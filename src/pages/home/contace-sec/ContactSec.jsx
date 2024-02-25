@@ -1,5 +1,6 @@
 import { FacebookLogo, InstagramLogo, TwitterLogo } from "phosphor-react";
 import React from "react";
+import fish from "../../../assets/fish.png";
 
 export default function ContactSec() {
   return (
@@ -16,9 +17,16 @@ export default function ContactSec() {
           </div>
         </div>
         <div className="border-r border-gray-300 items-center justify-center flex-col flex">
-          <p className="text-4xl text-fishDarkBlue lg:pt-16 pb-10 lg:pb-0">
-            THALASSA
-          </p>
+          <div className="relative">
+            <img
+              className="h-[65px] w-[150px] absolute top-[-38px]"
+              src={fish}
+              alt=""
+            />
+            <p className="text-4xl text-fishDarkBlue lg:pt-16 pb-10 lg:pb-0">
+              THALASSA
+            </p>
+          </div>
           <div className="flex lg:pt-16 gap-x-4">
             <FacebookLogo size={20} />
             <InstagramLogo size={20} />

@@ -1,15 +1,19 @@
 import React from "react";
 import Dishes from "./Dishes";
+import lob from "../../../assets/lob.png";
 
 export default function MenuSec() {
   return (
     <div className="bg-[#F7F7F4] pb-10">
       <div className=" text-center pt-16 lg:pb-20 pb-10">
-        <div className="flex justify-between">
-          <div className="w-5 bg-yellow-300 h-[1px] block"></div>
+        <div className="text-center">
           <p className="text-[#001C58]">TASTE THE BEST THAT SURPRISE YOU</p>
-          <div className="w-5 bg-[#E1D89F] h-[1px] block"></div>
         </div>
+        <img
+          src={lob}
+          className="absolute right-[-140px] h-[120px] w-[270px]"
+          alt=""
+        />
         <p className="text-2xl pb-1 pt-3">OUR MENU</p>
         <p className=" pt-2">EXPLORE TASTE SENSATIONS</p>
       </div>
