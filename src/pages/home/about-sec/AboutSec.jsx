@@ -1,5 +1,6 @@
 import React from "react";
 import aboutFish from "../../../assets/aboutFish.jpg";
+import crab from "../../../assets/crab.png";
 
 export default function AboutSec() {
   return (
@@ -7,14 +8,19 @@ export default function AboutSec() {
       <div className="p-4 pt-20">
         <img src={aboutFish} alt="" />
       </div>
-      <div className="p-4 pt-[64px]">
+      <div className="p-4 pt-[64px] relative">
         <div className="flex relative">
           <p>ABOUT RESTAURANT</p>
-          <div className="bg-[#E1D89F] w-[70px] h-[1px] block absolute left-[165px] top-[18px]"></div>
+          <div className=" absolute left-[165px] top-[18px]"></div>
         </div>
         <p className="text-3xl pt-4 pb-8">
           Enjoy An Exceptional Journey of Taste
         </p>
+        <img
+          className="absolute right-[-170px] rotate-[-50deg] top-4"
+          src={crab}
+          alt=""
+        />
         <div className="text-gray-700">
           Our buzzy food-hall style concept is inspired by international dining
           styles, especially in Asia. Explore the following fast-action food
