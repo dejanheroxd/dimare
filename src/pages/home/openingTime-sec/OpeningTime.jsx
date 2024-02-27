@@ -1,28 +1,41 @@
 import React from "react";
 import kalamari from "../../../assets/kalamari.jpg";
+import seafood from "../../../assets/seafood.jpg";
 
 export default function OpeningTime() {
   return (
-    <div className="p-4">
+    <div className="p-4 xl:pb-28 xl:flex relative overflow-hidden xl:justify-center xl:gap-48 xl:items-center ">
       <div>
         <img src="" alt="" />
       </div>
       <div>
-        <p className="text-3xl pt-10">OPEN TIME HOURS</p>
+        <p className="text-3xl pt-10 md:text-5xl md:-ml-[5px]">
+          OPEN TIME HOURS
+        </p>
         <p className="pt-5">
           Come and experience the classy atmosphere with delicious food
         </p>
         <p className="py-3">OPENING HOUR:</p>
-        <p className="pb-1">Monday - Friday : 9.00pm - 22:00pm</p>
-        <p className="pb-1">Saturday : 10.00pm - 23:00pm</p>
-        <p className="pb-1">Sunday : 5.00pm - 23:00pm</p>
-        <p className="pb-1">Holidays : Closed</p>
+        <p className="pb-1">
+          Monday - Friday
+          <span className="text-gray-500"> : 9.00pm - 22:00pm</span>
+        </p>
+        <p className="pb-1">
+          Saturday<span className="text-gray-500"> : 10.00pm - 23:00pm</span>
+        </p>
+        <p className="pb-1">
+          Sunday<span className="text-gray-500"> : 5.00pm - 23:00pm</span>
+        </p>
+        <p className="pb-1">
+          Holidays<span className="text-gray-500"> : Closed</span>
+        </p>
         <button className="bg-fishBlue text-white h-[50px] mt-9 px-6">
           BOOK A TABLE
         </button>
       </div>
-      <div>
-        <img className="pt-8 pb-10" src={kalamari} alt="" />
+      <div className="2xl:bg-[#e1f7ff] absolute w-[600px] right-[-50px] top-[200px] z-0 h-[650px]"></div>
+      <div className="xl:mr-[-170px] relative z-10">
+        <img className="pt-8 pb-10 xl:w-[950px]" src={seafood} alt="" />
       </div>
     </div>
   );

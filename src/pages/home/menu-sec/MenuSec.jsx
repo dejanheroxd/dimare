@@ -7,17 +7,19 @@ export default function MenuSec() {
     <div className="bg-[#F7F7F4] pb-10 relative overflow-hidden">
       <div className=" text-center overflow-hidden pt-16 lg:pb-20 pb-10">
         <div className="text-center">
-          <p className="text-[#001C58]">TASTE THE BEST THAT SURPRISE YOU</p>
+          <p className="text-[#001C58] xl:text-xl">
+            TASTE THE BEST THAT SURPRISE YOU
+          </p>
         </div>
         <img
           src={lob}
-          className="absolute overflow-hidden right-[-140px] h-[120px] w-[270px]"
+          className="absolute overflow-hidden right-[-140px] xl:h-[200px] xl:w-[480px] h-[120px] w-[270px]"
           alt=""
         />
-        <p className="text-2xl pb-1 pt-3">OUR MENU</p>
-        <p className=" pt-2">EXPLORE TASTE SENSATIONS</p>
+        <p className="text-2xl pb-1 lg:pb-3 pt-3 xl:text-5xl">OUR MENU</p>
+        <p className=" pt-2 xl:text-xl">EXPLORE TASTE SENSATIONS</p>
       </div>
-      <div className="grid lg:grid-cols-2 gap-x-24 p-4">
+      <div className="grid sm:grid-cols-2 sm:px-20 gap-x-24 p-4 xl:px-60">
         <Dishes
           name={"AHI POKE"}
           price={"17.95"}
