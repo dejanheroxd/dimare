@@ -48,11 +48,16 @@ export default function LandingPage() {
       />
       <Navbar />
       <div className="absolute flex-col inset-0 flex justify-center items-center">
-        <header className="text-white text-center text-3xl w-screen font-bold">
-          <p className="relative">DISCOVER SEAFOOD</p>
+        <header className="text-white lg:flex lg:flex-col lg:justify-center lg:items-center text-center relative  w-[320px] font-bold">
+          <p className="relative text-4xl sm:text-6xl md:text-7xl lg:mt-3 lg:hidden">
+            QUALITY
+          </p>
+          <p className="text-7xl hidden lg:block lg:w-[800px] xl:text-8xl xl:w-[900px]">
+            IL MONDO DI MARE
+          </p>
           <div className="relative">
             <svg
-              className="absolute left-20 top-4"
+              className="absolute left-20 top-4 sm:left-[60px] sm:top-7 md:left-[45px] md:top-8 lg:left-[-39px] lg:top-10"
               width="34"
               height="10"
               viewBox="0 0 44 20"
@@ -64,9 +69,11 @@ export default function LandingPage() {
                 fill="white"
               />
             </svg>
-            <p className="font-[lobster]">Perfection</p>
+            <p className="font-[lobster] text-2xl md:text-5xl sm:text-4xl pt-1 sm:pt-3 lg:text-6xl">
+              Seafood
+            </p>
             <svg
-              className="absolute right-20 top-4"
+              className="absolute right-20 top-4 sm:right-[60px] sm:top-7 md:right-[40px] md:top-8 lg:top-10 lg:right-[-40px]"
               width="34"
               height="10"
               viewBox="0 0 44 20"
@@ -80,7 +87,7 @@ export default function LandingPage() {
             </svg>
           </div>
         </header>
-        <button className="bg-fishBlue h-[50px] px-6 mt-3 text-white">
+        <button className="bg-fishBlue h-[50px] px-6 mt-3 sm:mt-5 lg:mt-8 text-white">
           DISCOVER MENU
         </button>
       </div>

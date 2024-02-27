@@ -10,27 +10,35 @@ export default function Navbar() {
     setNavActive((prev) => !prev);
   }
 
-  function closeNav() {
+  function activateNav() {
+    setNavActive(true);
+  }
+
+  function deactivateNav() {
     setNavActive(false);
+  }
+
+  function closeNav() {
+    deactivateNav();
   }
 
   useEffect(() => {
     const isLargerScreen = window.matchMedia("(min-width: 768px)");
 
-    function handleResize() {
-      if (isLargerScreen.matches) {
-        setNavActive(true);
+    function handleResize(event) {
+      if (event.matches) {
+        activateNav();
       } else {
-        setNavActive(false);
+        deactivateNav();
       }
     }
 
-    handleResize();
+    handleResize(isLargerScreen);
 
-    isLargerScreen.addEventListener("change", handleResize());
+    isLargerScreen.addEventListener("change", handleResize);
 
     return () => {
-      isLargerScreen.removeEventListener("change", handleResize());
+      isLargerScreen.removeEventListener("change", handleResize);
     };
   }, []);
 
@@ -80,7 +88,7 @@ export default function Navbar() {
 
   return (
     <div className="flex relative z-10 justify-between px-6 items-center pt-6">
-      <button className="bg-fishBlue px-8 py-2 text-white hidden md:flex">
+      <button className="bg-fishDarkBlue px-8 py-2 text-white hidden md:flex">
         <p>RESERVE</p>
       </button>
       <div className="sm:block md:hidden absolute top-5 left-6">
