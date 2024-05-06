@@ -5,7 +5,10 @@ import { motion } from "framer-motion";
 
 export default function AboutSec() {
   return (
-    <div className="bg-[#EEF9FD] 2xl:bg-white relative xl:flex xl:justify-center xl:gap-x-10 pb-4 overflow-hidden">
+    <div
+      id="section2"
+      className="bg-[#EEF9FD] 2xl:bg-white relative xl:flex xl:justify-center xl:gap-x-10 pb-4 overflow-hidden"
+    >
       <div className="2xl:bg-[#e1f7ff] absolute w-[1000px] left-[-320px] top-[-230px] z-0 h-[900px]"></div>
       <div className="p-4 pt-20 z-10">
         <motion.div

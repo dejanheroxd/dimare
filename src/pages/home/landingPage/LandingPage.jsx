@@ -47,7 +47,10 @@ export default function LandingPage() {
         }}
       />
       <Navbar />
-      <div className="absolute flex-col inset-0 flex justify-center items-center">
+      <div
+        id="section1"
+        className="absolute flex-col inset-0 flex justify-center items-center"
+      >
         <header className="text-white lg:flex lg:flex-col lg:justify-center lg:items-center text-center relative  w-[320px] font-bold">
           <p className="relative text-4xl sm:text-6xl md:text-7xl lg:mt-3 lg:hidden">
             QUALITY
@@ -88,7 +91,7 @@ export default function LandingPage() {
           </div>
         </header>
         <button className="bg-fishBlue h-[50px] px-6 mt-3 sm:mt-5 lg:mt-8 text-white">
-          DISCOVER MENU
+          <a href="#section4">DISCOVER MENU</a>
         </button>
       </div>
     </div>

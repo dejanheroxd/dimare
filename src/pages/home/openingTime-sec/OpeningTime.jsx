@@ -4,7 +4,10 @@ import { motion } from "framer-motion";
 
 export default function OpeningTime() {
   return (
-    <div className="p-4 xl:pb-28 xl:flex relative overflow-hidden xl:justify-center xl:gap-48 xl:items-center ">
+    <div
+      id="section3"
+      className="p-4 xl:pb-28 xl:flex relative overflow-hidden xl:justify-center xl:gap-48 xl:items-center "
+    >
       <div>
         <img src="" alt="" />
       </div>
@@ -55,7 +58,7 @@ export default function OpeningTime() {
           </p>
         </motion.div>
         <button className="bg-fishBlue text-white h-[50px] mt-9 px-6">
-          BOOK A TABLE
+          CONTACT US
         </button>
       </div>
       <div className="2xl:bg-[#e1f7ff] absolute w-[600px] right-[-50px] top-[200px] z-0 h-[650px]"></div>

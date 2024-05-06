@@ -4,7 +4,7 @@ import lob from "../../../assets/lob.png";
 
 export default function MenuSec() {
   return (
-    <div className="bg-[#F7F7F4] pb-10 relative overflow-hidden">
+    <div id="section4" className="bg-[#F7F7F4] pb-10 relative overflow-hidden">
       <div className=" text-center overflow-hidden pt-16 lg:pb-20 pb-10">
         <div className="text-center">
           <p className="text-[#001C58] xl:text-xl">

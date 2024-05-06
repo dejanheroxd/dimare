@@ -89,7 +89,7 @@ export default function Navbar() {
   return (
     <div className="flex relative z-10 justify-between px-6 items-center pt-6">
       <button className="bg-fishDarkBlue px-8 py-2 text-white hidden md:flex">
-        <p>RESERVE</p>
+        <p>CONTACT</p>
       </button>
       <div className="sm:block md:hidden absolute top-5 left-6">
         <p className="font-semibold text-lg text-white">IL MONDO DI MARE</p>
@@ -110,34 +110,26 @@ export default function Navbar() {
               exit="initial"
               className="md:flex h-full flex flex-col md:flex-row  gap-y-6 items-center justify-center md:gap-x-12"
             >
-              <Link
-                onClick={() => closeNav()}
-                to="/"
-                className="overflow-hidden"
-              >
-                <motion.li variants={mobileLinksVars}>HOME</motion.li>
-              </Link>
-              <Link
-                onClick={() => closeNav()}
-                to="/about"
-                className="overflow-hidden"
-              >
-                <motion.li variants={mobileLinksVars}>ABOUT</motion.li>
-              </Link>
-              <Link
-                onClick={() => closeNav()}
-                to="/menu"
-                className="overflow-hidden"
-              >
-                <motion.li variants={mobileLinksVars}>MENU</motion.li>
-              </Link>
-              <Link
-                onClick={() => closeNav()}
-                to="/contact"
-                className="overflow-hidden"
-              >
-                <motion.li variants={mobileLinksVars}>CONTACT</motion.li>
-              </Link>
+              <div className="overflow-hidden hover:cursor-pointer">
+                <motion.li variants={mobileLinksVars}>
+                  <a href="#section1">HOME</a>
+                </motion.li>
+              </div>
+              <div className="overflow-hidden hover:cursor-pointer">
+                <motion.li variants={mobileLinksVars}>
+                  <a href="#section2">ABOUT</a>
+                </motion.li>
+              </div>
+              <div className="overflow-hidden hover:cursor-pointer">
+                <motion.li variants={mobileLinksVars}>
+                  <a href="#section3">HOURS</a>
+                </motion.li>
+              </div>
+              <div className="overflow-hidden hover:cursor-pointer">
+                <motion.li variants={mobileLinksVars}>
+                  <a href="#section4">MENU</a>
+                </motion.li>
+              </div>
             </motion.ul>
           </motion.nav>
         )}
