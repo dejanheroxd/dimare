@@ -5,12 +5,16 @@ import OpeningTime from "./openingTime-sec/OpeningTime";
 import MenuSec from "./menu-sec/MenuSec";
 import ContactSec from "./contace-sec/ContactSec";
 
-export default function Home() {
+export default function Home({ contactPop, closePopUp, openPopUp }) {
   return (
     <div className="">
-      <LandingPage />
+      <LandingPage
+        contactPop={contactPop}
+        closePopUp={closePopUp}
+        openPopUp={openPopUp}
+      />
       <AboutSec />
-      <OpeningTime />
+      <OpeningTime openPopUp={openPopUp} />
       <MenuSec />
       <ContactSec />
     </div>

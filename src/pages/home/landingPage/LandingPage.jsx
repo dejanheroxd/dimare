@@ -30,11 +30,12 @@
 //   );
 // }
 
-import React from "react";
+import React, { useState } from "react";
 import shrimpGround from "../../../assets/shrimp.jpg";
 import Navbar from "../../../components/navbar/Navbar";
+import Contact from "../../contact/Contact";
 
-export default function LandingPage() {
+export default function LandingPage({ contactPop, openPopUp, closePopUp }) {
   return (
     <div className="h-screen relative">
       <div
@@ -46,10 +47,11 @@ export default function LandingPage() {
           filter: "brightness(0.68)",
         }}
       />
-      <Navbar />
+      <Navbar openPopUp={openPopUp} />
+      {contactPop && <Contact closePopUp={closePopUp} />}
       <div
         id="section1"
-        className="absolute flex-col inset-0 flex justify-center items-center"
+        className="absolute h-screen flex-col inset-0 flex justify-center items-center"
       >
         <header className="text-white lg:flex lg:flex-col lg:justify-center lg:items-center text-center relative  w-[320px] font-bold">
           <p className="relative text-4xl sm:text-6xl md:text-7xl lg:mt-3 lg:hidden">

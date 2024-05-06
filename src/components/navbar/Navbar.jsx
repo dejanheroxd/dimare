@@ -3,7 +3,7 @@ import { Phone } from "phosphor-react";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function Navbar() {
+export default function Navbar({ openPopUp }) {
   const [navActive, setNavActive] = useState(false);
 
   function navToggle() {
@@ -15,7 +15,9 @@ export default function Navbar() {
   }
 
   function deactivateNav() {
-    setNavActive(false);
+    if (window.innerWidth < 768) {
+      setNavActive(false);
+    }
   }
 
   function closeNav() {
@@ -88,7 +90,10 @@ export default function Navbar() {
 
   return (
     <div className="flex relative z-10 justify-between px-6 items-center pt-6">
-      <button className="bg-fishDarkBlue px-8 py-2 text-white hidden md:flex">
+      <button
+        onClick={() => openPopUp()}
+        className="bg-fishDarkBlue px-8 py-2 text-white hidden md:flex"
+      >
         <p>CONTACT</p>
       </button>
       <div className="sm:block md:hidden absolute top-5 left-6">
@@ -101,7 +106,7 @@ export default function Navbar() {
             initial="initial"
             animate="animate"
             exit="exit"
-            className="absolute origin-top w-full md:w-[500px] md:justify-center text-white md:relative md:h-full top-0 bottom-0 right-0 h-screen md:flex text-xl bg-fishBlue md:bg-transparent"
+            className="fixed origin-top w-full md:w-[500px] md:justify-center text-white md:relative md:h-full top-0 bottom-0 right-0 h-screen md:flex text-xl bg-fishBlue md:bg-transparent"
           >
             <motion.ul
               variants={containerVars}
@@ -110,22 +115,34 @@ export default function Navbar() {
               exit="initial"
               className="md:flex h-full flex flex-col md:flex-row  gap-y-6 items-center justify-center md:gap-x-12"
             >
-              <div className="overflow-hidden hover:cursor-pointer">
+              <div
+                onClick={() => deactivateNav()}
+                className="overflow-hidden hover:cursor-pointer"
+              >
                 <motion.li variants={mobileLinksVars}>
                   <a href="#section1">HOME</a>
                 </motion.li>
               </div>
-              <div className="overflow-hidden hover:cursor-pointer">
+              <div
+                onClick={() => deactivateNav()}
+                className="overflow-hidden hover:cursor-pointer"
+              >
                 <motion.li variants={mobileLinksVars}>
                   <a href="#section2">ABOUT</a>
                 </motion.li>
               </div>
-              <div className="overflow-hidden hover:cursor-pointer">
+              <div
+                onClick={() => deactivateNav()}
+                className="overflow-hidden hover:cursor-pointer"
+              >
                 <motion.li variants={mobileLinksVars}>
                   <a href="#section3">HOURS</a>
                 </motion.li>
               </div>
-              <div className="overflow-hidden hover:cursor-pointer">
+              <div
+                onClick={() => deactivateNav()}
+                className="overflow-hidden hover:cursor-pointer"
+              >
                 <motion.li variants={mobileLinksVars}>
                   <a href="#section4">MENU</a>
                 </motion.li>
@@ -142,20 +159,20 @@ export default function Navbar() {
       </div>
       <button
         onClick={() => navToggle()}
-        className="absolute md:hidden right-6 top-7"
+        className="fixed md:hidden right-6 top-7 z-[100] "
       >
         <span
-          className={`bg-white duration-300 w-6 h-[2px] mb-1 block ${
+          className={`bg-white duration-300 shadow-[0_3px_10px_rgb(0,0,0,0.5)] w-6 h-[2px] mb-1 block ${
             navActive ? "rotate-45 translate-y-[6px]" : ""
           }`}
         ></span>
         <span
-          className={`bg-white duration-300 w-6 h-[2px] mb-1 block ${
+          className={`bg-white duration-300 shadow-[0_3px_10px_rgb(0,0,0,0.5)] w-6 h-[2px] mb-1 block ${
             navActive ? "hidden" : ""
           }`}
         ></span>
         <span
-          className={`bg-white duration-300 w-6 h-[2px] mb-1 block ${
+          className={`bg-white duration-300 shadow-[0_3px_10px_rgb(0,0,0,0.5)] w-6 h-[2px] mb-1 block ${
             navActive ? "-rotate-45 " : ""
           }`}
         ></span>

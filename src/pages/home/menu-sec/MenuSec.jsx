@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Dishes from "./Dishes";
 import lob from "../../../assets/lob.png";
 
 export default function MenuSec() {
+  const [collapse, setCollapse] = useState(false);
+
   return (
     <div id="section4" className="bg-[#F7F7F4] pb-10 relative overflow-hidden">
       <div className=" text-center overflow-hidden pt-16 lg:pb-20 pb-10">
@@ -19,7 +21,7 @@ export default function MenuSec() {
         <p className="text-2xl pb-1 lg:pb-3 pt-3 xl:text-5xl">OUR MENU</p>
         <p className=" pt-2 xl:text-xl">EXPLORE TASTE SENSATIONS</p>
       </div>
-      <div className="grid sm:grid-cols-2 sm:px-20 gap-x-24 p-4 xl:px-60">
+      <div className="grid sm:grid-cols-2 sm:px-20 gap-x-24 pt-4 xl:px-60">
         <Dishes
           name={"AHI POKE"}
           price={"17.95"}
@@ -71,8 +73,55 @@ export default function MenuSec() {
           description={"Aenean massa. Cum sociis theme natoqu"}
         />
       </div>
+      {collapse && (
+        <div className="grid sm:grid-cols-2 sm:px-20 gap-x-24 px-4 xl:px-60">
+          <Dishes
+            name={"Tuna Roll"}
+            price={"17.95"}
+            description={"Aenean massa. Cum sociis theme natoqu"}
+          />
+          <Dishes
+            name={"Tuna Roll"}
+            price={"17.95"}
+            description={"Aenean massa. Cum sociis theme natoqu"}
+          />
+          <Dishes
+            name={"Tuna Roll"}
+            price={"17.95"}
+            description={"Aenean massa. Cum sociis theme natoqu"}
+          />
+          <Dishes
+            name={"Tuna Roll"}
+            price={"17.95"}
+            description={"Aenean massa. Cum sociis theme natoqu"}
+          />
+          <Dishes
+            name={"Tuna Roll"}
+            price={"17.95"}
+            description={"Aenean massa. Cum sociis theme natoqu"}
+          />
+          <Dishes
+            name={"Tuna Roll"}
+            price={"17.95"}
+            description={"Aenean massa. Cum sociis theme natoqu"}
+          />
+          <Dishes
+            name={"Tuna Roll"}
+            price={"17.95"}
+            description={"Aenean massa. Cum sociis theme natoqu"}
+          />
+          <Dishes
+            name={"Tuna Roll"}
+            price={"17.95"}
+            description={"Aenean massa. Cum sociis theme natoqu"}
+          />
+        </div>
+      )}
       <div className="w-full flex justify-center">
-        <button className="bg-[#001C58] text-white py-2 px-3 ">
+        <button
+          onClick={() => setCollapse(!collapse)}
+          className="bg-[#001C58] text-white py-2 px-3 "
+        >
           VIEW ALL MENU
         </button>
       </div>

@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import aboutFish from "../../../assets/aboutFish.jpg";
 import crab from "../../../assets/crab.png";
 import { motion } from "framer-motion";
 
 export default function AboutSec() {
+  const [collapse, setCollapse] = useState(false);
+
   return (
     <div
       id="section2"
@@ -24,7 +26,7 @@ export default function AboutSec() {
         </motion.div>
       </div>
       <div className="p-4 pt-[64px] relative xl:static xl:flex xl:flex-col xl:justify-center xl:items-start">
-        <div className="flex relative md:text-xl">
+        <div className={`${collapse && "pt-[92px]"} flex relative md:text-xl`}>
           <motion.p
             initial={{ opacity: 0, y: 70 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -64,8 +66,24 @@ export default function AboutSec() {
             spirits, beers and wines are all made with integrity and offer
             something for every guest.
           </p>
+          {collapse && (
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5 }}
+              className="pt-5 "
+            >
+              Our buzzy food-hall style concept is inspired by international
+              dining styles, especially in Asia. Explore the following
+              fast-action food stations as busy chefs perform.
+            </motion.p>
+          )}
         </motion.div>
-        <button className="bg-fishBlue text-white h-[50px] mt-9 px-6">
+        <button
+          onClick={() => setCollapse(!collapse)}
+          className="bg-fishBlue text-white h-[50px] mt-9 px-6"
+        >
           READ MORE ABOUT US
         </button>
       </div>

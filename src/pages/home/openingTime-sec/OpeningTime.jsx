@@ -2,7 +2,7 @@ import React from "react";
 import seafood from "../../../assets/seafood.jpg";
 import { motion } from "framer-motion";
 
-export default function OpeningTime() {
+export default function OpeningTime({ openPopUp }) {
   return (
     <div
       id="section3"
@@ -57,16 +57,19 @@ export default function OpeningTime() {
             Holidays<span className="text-gray-500"> : Closed</span>
           </p>
         </motion.div>
-        <button className="bg-fishBlue text-white h-[50px] mt-9 px-6">
+        <button
+          onClick={() => openPopUp()}
+          className="bg-fishBlue hover:cursor-pointer text-white h-[50px] mt-9 px-6"
+        >
           CONTACT US
         </button>
       </div>
-      <div className="2xl:bg-[#e1f7ff] absolute w-[600px] right-[-50px] top-[200px] z-0 h-[650px]"></div>
+      <div className="2xl:bg-[#e1f7ff] hidden 2xl:block absolute w-[600px] right-[-50px] top-[200px] z-0 h-[650px]"></div>
       <motion.div
         initial={{ opacity: 0, x: 70 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.7 }}
-        className="xl:mr-[-170px] relative z-10"
+        className="xl:mr-[-170px] relative "
       >
         <img className="pt-8 pb-10 xl:w-[950px]" src={seafood} alt="" />
       </motion.div>
