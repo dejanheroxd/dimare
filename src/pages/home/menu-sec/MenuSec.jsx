@@ -21,7 +21,7 @@ export default function MenuSec() {
         <p className="text-2xl pb-1 lg:pb-3 pt-3 xl:text-5xl">OUR MENU</p>
         <p className=" pt-2 xl:text-xl">EXPLORE TASTE SENSATIONS</p>
       </div>
-      <div className="grid sm:grid-cols-2 sm:px-20 gap-x-24 pt-4 xl:px-60">
+      <div className="grid sm:grid-cols-2 sm:px-20 gap-x-24 pt-4 px-4 xl:px-60">
         <Dishes
           name={"AHI POKE"}
           price={"17.95"}
@@ -120,9 +120,10 @@ export default function MenuSec() {
       <div className="w-full flex justify-center">
         <button
           onClick={() => setCollapse(!collapse)}
-          className="bg-[#001C58] text-white py-2 px-3 "
+          className="border hover:bg-white hover:text-fishDarkBlue text-white bg-fishDarkBlue border-gray-700 duration-150 py-2 px-3 "
         >
-          VIEW ALL MENU
+          {" "}
+          {collapse ? <p>VIEW LESS</p> : <p>VIEW ALL MENU</p>}
         </button>
       </div>
     </div>

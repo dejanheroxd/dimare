@@ -82,7 +82,7 @@ export default function AboutSec() {
         </motion.div>
         <button
           onClick={() => setCollapse(!collapse)}
-          className="bg-fishBlue text-white h-[50px] mt-9 px-6"
+          className="bg-fishBlue duration-150 hover:bg-[#7094ad] text-white h-[50px] mt-9 px-6"
         >
           READ MORE ABOUT US
         </button>

@@ -92,7 +92,7 @@ export default function Navbar({ openPopUp }) {
     <div className="flex relative z-10 justify-between px-6 items-center pt-6">
       <button
         onClick={() => openPopUp()}
-        className="bg-fishDarkBlue px-8 py-2 text-white hidden md:flex"
+        className="bg-fishDarkBlue duration-150 hover:bg-[#1c3345] px-8 py-2 text-white hidden md:flex"
       >
         <p>CONTACT</p>
       </button>

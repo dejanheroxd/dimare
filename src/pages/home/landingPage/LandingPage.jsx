@@ -92,7 +92,7 @@ export default function LandingPage({ contactPop, openPopUp, closePopUp }) {
             </svg>
           </div>
         </header>
-        <button className="bg-fishBlue h-[50px] px-6 mt-3 sm:mt-5 lg:mt-8 text-white">
+        <button className="bg-fishBlue duration-150 hover:bg-[#7094ad] h-[50px] px-6 mt-3 sm:mt-5 lg:mt-8 text-white">
           <a href="#section4">DISCOVER MENU</a>
         </button>
       </div>

@@ -59,7 +59,7 @@ export default function OpeningTime({ openPopUp }) {
         </motion.div>
         <button
           onClick={() => openPopUp()}
-          className="bg-fishBlue hover:cursor-pointer text-white h-[50px] mt-9 px-6"
+          className="bg-fishBlue duration-150 hover:bg-[#7094ad] hover:cursor-pointer text-white h-[50px] mt-9 px-6"
         >
           CONTACT US
         </button>
