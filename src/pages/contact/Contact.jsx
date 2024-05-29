@@ -33,21 +33,21 @@ export default function Contact({ closePopUp }) {
         <div className="flex justify-center font-serif xl:pt-14">
           <div className="w-64 xl:w-[550px] flex flex-col text-center xl:text-left items-center pt-12">
             <p className="text-italia text-gray-700 text-3xl pb-6 xl:pb-9">
-              Contact Us
+              Επικοινωνία
             </p>
             <div className="hidden lg:block">
               <p className="pb-6 text-lg xl:text-xl text-fishDarkBlue">
-                500 Terry Francine Street San Francisco, CA 94158
+                ΕΛΕΥΘΕΡΙΟΥ ΒΕΝΙΖΕΛΟΥ 13 48100 Πρέβεζα
               </p>
               <div className="text-lg xl:text-xl text-fishDarkBlue xl:flex xl:justify-center xl:gap-x-36 xl:w-full">
                 <div className="pb-6 xl:leading-9">
-                  <p>Mon - Fri: 12pm - 10pm</p>
-                  <p>Saturday: 11am - 10pm</p>
-                  <p>Sunday: 11am - 11pm</p>
+                  <p>Δευτ - Παρ: 11 - 22</p>
+                  <p>Σάββατο: 10 - 23</p>
+                  <p>Κυριακή: 11 - 23</p>
                 </div>
                 <div>
                   <p>dalforno@gmail.com</p>
-                  <p>148-387-5397</p>
+                  <p>+30 2682 026156</p>
                 </div>
               </div>
             </div>
@@ -87,7 +87,7 @@ export default function Contact({ closePopUp }) {
                 className="border hover:bg-white hover:text-fishDarkBlue text-white bg-fishDarkBlue border-gray-700 w-full py-2 xl:col-span-4 sm:hover:text-italia duration-200"
                 type="submit"
               >
-                Submit
+                Υποβολή
               </button>
             </div>
           </div>
