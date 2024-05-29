@@ -153,7 +153,7 @@ export default function Navbar({ openPopUp }) {
         <p>
           <Phone size={32} color="white" />
         </p>
-        <p className="text-white">+30 2682 025691</p>
+        <p className="text-white">+30 2682 021761</p>
       </div>
       <button
         onClick={() => navToggle()}
