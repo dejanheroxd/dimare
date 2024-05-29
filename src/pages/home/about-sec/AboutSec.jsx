@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import aboutFish from "../../../assets/aboutFish.jpg";
+// import aboutFish from "../../../assets/aboutFish.jpg";
+import aboutFish from "../../../assets/simposio-1.jpg";
 import crab from "../../../assets/crab.png";
 import { motion } from "framer-motion";
 
@@ -32,7 +33,7 @@ export default function AboutSec() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
           >
-            ABOUT RESTAURANT
+            Σχετικά με το Εστιατόριο
           </motion.p>
           <div className=" absolute left-[165px] top-[18px]"></div>
         </div>
@@ -42,7 +43,7 @@ export default function AboutSec() {
           transition={{ duration: 0.7 }}
           className="text-3xl pt-4 md:pt-2 pb-8 xl:w-[700px] z-10 md:text-5xl md:leading-[60px] md:-ml-[5px]"
         >
-          ENJOY AN EXCEPTIONAL JOURNEY OF TASTE
+          Απολαύστε ένα εξαιρετικό ταξίδι γεύσης
         </motion.p>
         <img
           className="absolute w-[240px] h-[110px] md:w-[380px] md:h-[170px] md:right-[-130px] md:top-[-50px] right-[-90px] rotate-[-50deg] xl:w-[480px] xl:h-[200px] xl:top-[-13px] xl:right-[-145px] 2xl:w-[650px] 2xl:h-[300px] top-4"
@@ -55,16 +56,17 @@ export default function AboutSec() {
           transition={{ duration: 0.7 }}
           className="text-gray-700 xl:w-[560px] z-10"
         >
-          Our buzzy food-hall style concept is inspired by international dining
-          styles, especially in Asia. Explore the following fast-action food
-          stations as busy chefs perform.
+          Καλώς ήρθατε στην φιλόξενη ταβέρνα μας στην Πρέβεζα, όπου η παράδοση
+          συναντά την άνεση. Απολαύστε τη ζεστή και φιλική ατμόσφαιρα καθώς οι
+          σεφ μας ετοιμάζουν μια μεγάλη ποικιλία από αυθεντικά ελληνικά πιάτα,
+          από την πλούσια μουσακά μέχρι το νόστιμο σουβλάκι.
           <p className="pt-5">
-            Enjoy a verdant Garden to Glass experience. It’s in the view, it’s
-            reflected in the design, and it infuses many drinks. In fact, all
-            our delicious fresh ingredients are sustainably picked from our
-            Jemima’s Kitchen Garden. Our flourishing range of cocktails,
-            spirits, beers and wines are all made with integrity and offer
-            something for every guest.
+            Προμηθευόμαστε τα υλικά μας από αξιόπιστους προμηθευτές για να
+            εξασφαλίσουμε ότι κάθε γεύμα είναι φρέσκο και νόστιμο. Το μενού των
+            ποτών μας περιλαμβάνει μια εξαιρετική επιλογή από κοκτέιλ, ποτά,
+            μπύρες και κρασιά, ιδανικά για να συνοδεύσουν το γεύμα σας. Είτε
+            είστε εδώ για ένα χαλαρό δείπνο είτε για μια ειδική περίσταση,
+            έχουμε κάτι για όλους.
           </p>
           {collapse && (
             <motion.p
@@ -74,9 +76,9 @@ export default function AboutSec() {
               transition={{ duration: 0.5 }}
               className="pt-5 "
             >
-              Our buzzy food-hall style concept is inspired by international
-              dining styles, especially in Asia. Explore the following
-              fast-action food stations as busy chefs perform.
+              Επιπλέον, διοργανώνουμε και εκδηλώσεις όπως γάμους ή άλλα ειδικά
+              γεγονότα, όπου μπορείτε να ενοικιάσετε όλα τα τραπέζια για μια
+              αξέχαστη εμπειρία.
             </motion.p>
           )}
         </motion.div>
@@ -84,7 +86,7 @@ export default function AboutSec() {
           onClick={() => setCollapse(!collapse)}
           className="bg-fishBlue duration-150 hover:bg-[#7094ad] text-white h-[50px] mt-9 px-6"
         >
-          READ MORE ABOUT US
+          Διαβάστε Περισσότερα
         </button>
       </div>
     </div>

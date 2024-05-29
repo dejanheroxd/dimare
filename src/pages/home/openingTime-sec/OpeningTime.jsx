@@ -1,5 +1,6 @@
 import React from "react";
-import seafood from "../../../assets/seafood.jpg";
+// import seafood from "../../../assets/seafood.jpg";
+import seafood from "../../../assets/simposio2.jpg";
 import { motion } from "framer-motion";
 
 export default function OpeningTime({ openPopUp }) {
@@ -18,10 +19,10 @@ export default function OpeningTime({ openPopUp }) {
           transition={{ duration: 0.7 }}
         >
           <p className="text-3xl pt-10 md:text-5xl md:-ml-[5px]">
-            OPEN TIME HOURS
+            Ώραριο Λειτουργίας
           </p>
           <p className="pt-5">
-            Come and experience the classy atmosphere with delicious food
+            Ελάτε να απολαύσετε φαγητό σε φιλική ατμόσφαιρα
           </p>
         </motion.div>
         <motion.p
@@ -30,7 +31,7 @@ export default function OpeningTime({ openPopUp }) {
           transition={{ duration: 0.7 }}
           className="py-3"
         >
-          OPENING HOUR:
+          Ώρες:
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 70 }}
@@ -38,11 +39,11 @@ export default function OpeningTime({ openPopUp }) {
           transition={{ duration: 0.7 }}
         >
           <p className="pb-1">
-            Monday - Friday
-            <span className="text-gray-500"> : 9.00pm - 22:00pm</span>
+            Δευτέρα - Παρασκευή
+            <span className="text-gray-500"> : 11.00 - 22:00</span>
           </p>
           <p className="pb-1">
-            Saturday<span className="text-gray-500"> : 10.00pm - 23:00pm</span>
+            Σάββατο<span className="text-gray-500"> : 10.00 - 23:00</span>
           </p>
         </motion.div>
         <motion.div
@@ -51,20 +52,20 @@ export default function OpeningTime({ openPopUp }) {
           transition={{ duration: 0.7 }}
         >
           <p className="pb-1">
-            Sunday<span className="text-gray-500"> : 5.00pm - 23:00pm</span>
+            Κυριακή<span className="text-gray-500"> : 11.00 - 23:00</span>
           </p>
           <p className="pb-1">
-            Holidays<span className="text-gray-500"> : Closed</span>
+            Αργίες<span className="text-gray-500"> : Κλειστά</span>
           </p>
         </motion.div>
         <button
           onClick={() => openPopUp()}
           className="bg-fishBlue duration-150 hover:bg-[#7094ad] hover:cursor-pointer text-white h-[50px] mt-9 px-6"
         >
-          CONTACT US
+          Επικοινωνήστε μαζί μας
         </button>
       </div>
-      <div className="2xl:bg-[#e1f7ff] hidden 2xl:block absolute w-[600px] right-[-50px] top-[200px] z-0 h-[650px]"></div>
+      <div className="2xl:bg-[#e1f7ff] hidden 2xl:block absolute w-[600px] right-[-50px] top-[200px] z-0 h-[680px]"></div>
       <motion.div
         initial={{ opacity: 0, x: 70 }}
         whileInView={{ opacity: 1, x: 0 }}

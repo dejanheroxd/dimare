@@ -94,7 +94,7 @@ export default function Navbar({ openPopUp }) {
         onClick={() => openPopUp()}
         className="bg-fishDarkBlue duration-150 hover:bg-[#1c3345] px-8 py-2 text-white hidden md:flex"
       >
-        <p>CONTACT</p>
+        <p>Επικοινωνία</p>
       </button>
       <div className="sm:block md:hidden absolute top-5 left-6">
         <p className="font-semibold text-lg text-white">IL MONDO DI MARE</p>
@@ -120,7 +120,7 @@ export default function Navbar({ openPopUp }) {
                 className="overflow-hidden hover:cursor-pointer"
               >
                 <motion.li variants={mobileLinksVars}>
-                  <a href="#section1">HOME</a>
+                  <a href="#section1">Αρχική</a>
                 </motion.li>
               </div>
               <div
@@ -128,7 +128,7 @@ export default function Navbar({ openPopUp }) {
                 className="overflow-hidden hover:cursor-pointer"
               >
                 <motion.li variants={mobileLinksVars}>
-                  <a href="#section2">ABOUT</a>
+                  <a href="#section2">Σχετικά</a>
                 </motion.li>
               </div>
               <div
@@ -136,7 +136,7 @@ export default function Navbar({ openPopUp }) {
                 className="overflow-hidden hover:cursor-pointer"
               >
                 <motion.li variants={mobileLinksVars}>
-                  <a href="#section3">HOURS</a>
+                  <a href="#section3">Ώρες</a>
                 </motion.li>
               </div>
               <div
@@ -144,7 +144,7 @@ export default function Navbar({ openPopUp }) {
                 className="overflow-hidden hover:cursor-pointer"
               >
                 <motion.li variants={mobileLinksVars}>
-                  <a href="#section4">MENU</a>
+                  <a href="#section4">Μενού</a>
                 </motion.li>
               </div>
             </motion.ul>
@@ -155,7 +155,7 @@ export default function Navbar({ openPopUp }) {
         <p>
           <Phone size={32} color="white" />
         </p>
-        <p className="text-white">+ 04 640 534 394</p>
+        <p className="text-white">+30 2682 026156</p>
       </div>
       <button
         onClick={() => navToggle()}

@@ -8,12 +8,11 @@ export default function ContactSec() {
       <div className="lg:grid lg:grid-cols-3 lg:px-20 lg:py-24">
         <div className="border-r border-gray-300 pb-20 pt-20 lg:pt-20 lg:pb-0 lg:h-[220px] flex justify-center items-center flex-col">
           <div>
-            <p className="text-xl text-fishDarkBlue pb-3">WE ARE HERE</p>
+            <p className="text-xl text-fishDarkBlue pb-3">Είμαστε εδώ</p>
           </div>
           <div className="text-gray-500 text-center">
-            <p>810 Brickell Bay Dr, Miami, FL 33131</p>
-            <p>+365 66 996 25 10</p>
-            <p>thalassa@qodeinteractive.com</p>
+            <p>ΕΛΕΥΘΕΡΙΟΥ ΒΕΝΙΖΕΛΟΥ 13 48100 Πρέβεζα</p>
+            <p>+30 2682 026156</p>
           </div>
         </div>
         <div className="border-r border-gray-300 items-center justify-center flex-col flex">
@@ -24,7 +23,7 @@ export default function ContactSec() {
               alt=""
             />
             <p className="text-[28px] text-fishDarkBlue lg:pt-16 pb-10 lg:pb-0">
-              IL MONDO DI MARE
+              Ταβέρνα Συμπόσιο
             </p>
           </div>
           <div className="flex lg:pt-16 gap-x-4">
@@ -34,17 +33,17 @@ export default function ContactSec() {
           </div>
         </div>
         <div className="text-center flex justify-center pt-8 lg:pt-0 items-center flex-col">
-          <p className="text-fishDarkBlue text-xl pb-3">WORKING HOURS</p>
+          <p className="text-fishDarkBlue text-xl pb-3">Ώραριο Λειτουργίας</p>
           <div className="text-gray-500 pb-20 lg:pb-0">
-            <p>Monday – Friday 09:00 – 22:00</p>
-            <p>Saturday 11:00 – 01:00</p>
-            <p>Sunday 11:00 – 23:00</p>
+            <p>Δευτέρα - Παρασκευή 11:00 – 22:00</p>
+            <p>Σάββατο 11:00 – 01:00</p>
+            <p>Κυριακή 11:00 – 23:00</p>
           </div>
         </div>
       </div>
       <div className="bg-[#F5F4F1] text-center py-2">
         <p className="text-[#848993] italic font-serif">
-          © 2021 Qode Interactive, All Rights Reserved
+          © 2024 Ταβέρνα Συμπόσιο, All Rights Reserved
         </p>
       </div>
     </div>
