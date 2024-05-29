@@ -39,10 +39,10 @@ export default function OpeningTime({ openPopUp }) {
         >
           <p className="pb-1">
             Δευτέρα - Παρασκευή
-            <span className="text-gray-500"> : 11.00 - 22:00</span>
+            <span className="text-gray-500"> : 8:00 - 16:00</span>
           </p>
           <p className="pb-1">
-            Σάββατο<span className="text-gray-500"> : 10.00 - 23:00</span>
+            Σάββατο<span className="text-gray-500"> : 8:00 - 16:00</span>
           </p>
         </motion.div>
         <motion.div
@@ -51,7 +51,7 @@ export default function OpeningTime({ openPopUp }) {
           transition={{ duration: 0.7 }}
         >
           <p className="pb-1">
-            Κυριακή<span className="text-gray-500"> : 11.00 - 23:00</span>
+            Κυριακή<span className="text-gray-500"> : 8:00 - 16:00</span>
           </p>
           <p className="pb-1">
             Αργίες<span className="text-gray-500"> : Κλειστά</span>

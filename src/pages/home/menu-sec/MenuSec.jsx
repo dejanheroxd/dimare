@@ -21,52 +21,52 @@ export default function MenuSec() {
       </div>
       <div className="grid sm:grid-cols-2 sm:px-20 gap-x-24 pt-4 px-4 xl:px-60">
         <Dishes
-          name={"Μουσακάς"}
-          price={"12"}
-          description={"Aenean massa. Cum sociis theme natoqu"}
-        />
-        <Dishes
-          name={"Κοτόπουλο σουβλάκι"}
-          price={"10"}
-          description={"Aenean massa. Cum sociis theme natoqu"}
-        />
-        <Dishes
-          name={"Ψητός καλαμάρι "}
-          price={"15"}
-          description={"Aenean massa. Cum sociis theme natoqu"}
-        />
-        <Dishes
-          name={"Μπριζόλα χοιρινή"}
-          price={"14"}
-          description={"Aenean massa. Cum sociis theme natoqu"}
-        />
-        <Dishes
-          name={"Λαχταριστός κεμπάπ"}
+          name={"Μπαρμπούνι"}
           price={"13"}
           description={"Aenean massa. Cum sociis theme natoqu"}
         />
         <Dishes
-          name={"Αρνάκι κοκκινιστό"}
+          name={"Ψαρόσουπα"}
+          price={"11"}
+          description={"Aenean massa. Cum sociis theme natoqu"}
+        />
+        <Dishes
+          name={"Ψητός καλαμάρι "}
           price={"16"}
           description={"Aenean massa. Cum sociis theme natoqu"}
         />
         <Dishes
-          name={"Σουτζουκάκια"}
+          name={"Τσιπούρα"}
+          price={"15"}
+          description={"Aenean massa. Cum sociis theme natoqu"}
+        />
+        <Dishes
+          name={"Λαβράκι"}
+          price={"13"}
+          description={"Aenean massa. Cum sociis theme natoqu"}
+        />
+        <Dishes
+          name={"Μύδια σαγανάκι"}
+          price={"16"}
+          description={"Aenean massa. Cum sociis theme natoqu"}
+        />
+        <Dishes
+          name={"Σαρδέλες"}
           price={"9"}
           description={"Aenean massa. Cum sociis theme natoqu"}
         />
         <Dishes
-          name={"Γεμιστά φιλέτα κοτόπουλου"}
+          name={"Γαρίδες σαγανάκι"}
           price={"10"}
           description={"Aenean massa. Cum sociis theme natoqu"}
         />
         <Dishes
-          name={"Παστίτσιο "}
+          name={"Αστακομακαρονάδα  "}
           price={"8"}
           description={"Aenean massa. Cum sociis theme natoqu"}
         />
         <Dishes
-          name={"Πανσέτα "}
+          name={"Γαύρος τηγανητός "}
           price={"10"}
           description={"Aenean massa. Cum sociis theme natoqu"}
         />
@@ -74,22 +74,22 @@ export default function MenuSec() {
       {collapse && (
         <div className="grid sm:grid-cols-2 sm:px-20 gap-x-24 px-4 xl:px-60">
           <Dishes
-            name={"Κοτόσουπα "}
+            name={"Σουπιά με σπανάκι"}
             price={"6"}
             description={"Aenean massa. Cum sociis theme natoqu"}
           />
           <Dishes
-            name={"Κοτόπουλο καρυκεύτο"}
+            name={"Αθερίνα τηγανητή"}
             price={"11"}
             description={"Aenean massa. Cum sociis theme natoqu"}
           />
           <Dishes
-            name={"Παϊδάκια "}
+            name={"Κακαβιά"}
             price={"15"}
             description={"Aenean massa. Cum sociis theme natoqu"}
           />
           <Dishes
-            name={"Παντζάρια ψητά"}
+            name={"Ριζότο θαλασσινών"}
             price={"8"}
             description={"Aenean massa. Cum sociis theme natoqu"}
           />
@@ -99,17 +99,17 @@ export default function MenuSec() {
             description={"Aenean massa. Cum sociis theme natoqu"}
           />
           <Dishes
-            name={"Λουκάνικα ψητά"}
+            name={"Μύδια αχνιστά"}
             price={"11"}
             description={"Aenean massa. Cum sociis theme natoqu"}
           />
           <Dishes
-            name={"Φιλέτο ψαριού"}
+            name={"Χτένια στα κάρβουνα"}
             price={"16"}
             description={"Aenean massa. Cum sociis theme natoqu"}
           />
           <Dishes
-            name={"Μακαρόνια άλ φορνο"}
+            name={"Χταπόδι στιφάδο"}
             price={"8"}
             description={"Aenean massa. Cum sociis theme natoqu"}
           />
