@@ -11,19 +11,19 @@ export default function ContactSec() {
             <p className="text-xl text-fishDarkBlue pb-3">Είμαστε εδώ</p>
           </div>
           <div className="text-gray-500 text-center">
-            <p>ΕΛΕΥΘΕΡΙΟΥ ΒΕΝΙΖΕΛΟΥ 13 48100 Πρέβεζα</p>
-            <p>+30 2682 026156</p>
+            <p>Αδριανουπόλεως 7 48100 Πρέβεζα</p>
+            <p>+30 2682 025691</p>
           </div>
         </div>
         <div className="border-r border-gray-300 items-center justify-center flex-col flex">
           <div className="relative">
             <img
-              className="h-[65px] w-[150px] absolute left-[45px] top-[-38px]"
+              className="h-[65px] w-[150px] absolute left-[12px] top-[-38px]"
               src={fish}
               alt=""
             />
             <p className="text-[28px] text-fishDarkBlue lg:pt-16 pb-10 lg:pb-0">
-              Ταβέρνα Συμπόσιο
+              Τρελή Γαρίδα
             </p>
           </div>
           <div className="flex lg:pt-16 gap-x-4">
@@ -43,7 +43,7 @@ export default function ContactSec() {
       </div>
       <div className="bg-[#F5F4F1] text-center py-2">
         <p className="text-[#848993] italic font-serif">
-          © 2024 Ταβέρνα Συμπόσιο, All Rights Reserved
+          © 2024 Τρελή Γαρίδα, All Rights Reserved
         </p>
       </div>
     </div>

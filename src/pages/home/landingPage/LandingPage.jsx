@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-// import shrimpGround from "../../../assets/shrimp.jpg";
-import shrimpGround from "../../../assets/simposio.jpeg";
+import shrimpGround from "../../../assets/shrimp.jpg";
 import Navbar from "../../../components/navbar/Navbar";
 import Contact from "../../contact/Contact";
 
@@ -26,8 +25,8 @@ export default function LandingPage({ contactPop, openPopUp, closePopUp }) {
           <p className="relative text-4xl sm:text-6xl md:text-7xl lg:mt-3 lg:hidden">
             QUALITY
           </p>
-          <p className="text-7xl mt-4 hidden lg:block lg:w-[800px] xl:text-8xl xl:w-[900px]">
-            Ταβέρνα Συμπόσιο
+          <p className="text-8xl mt-4 hidden lg:block lg:w-[800px] xl:text-8xl xl:w-[900px]">
+            Τρελή Γαρίδα
           </p>
           <div className="relative">
             {/* <svg
@@ -44,7 +43,7 @@ export default function LandingPage({ contactPop, openPopUp, closePopUp }) {
               />
             </svg> */}
             <p className="font-[lobster] mt-4 lg:w-[490px] text-2xl md:text-5xl sm:text-4xl pt-1 sm:pt-3 lg:text-5xl">
-              Ελληνικές Σπεσιαλιτέ
+              Φρέσκα Θαλασσινά
             </p>
             {/* <svg
               className="absolute right-20 top-4 sm:right-[60px] sm:top-7 md:right-[40px] md:top-8 lg:top-10 lg:right-[-40px]"

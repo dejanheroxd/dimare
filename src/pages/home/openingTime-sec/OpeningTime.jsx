@@ -1,6 +1,5 @@
 import React from "react";
-// import seafood from "../../../assets/seafood.jpg";
-import seafood from "../../../assets/simposio2.jpg";
+import seafood from "../../../assets/seafood.jpg";
 import { motion } from "framer-motion";
 
 export default function OpeningTime({ openPopUp }) {

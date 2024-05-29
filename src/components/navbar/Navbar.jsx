@@ -96,9 +96,7 @@ export default function Navbar({ openPopUp }) {
       >
         <p>Επικοινωνία</p>
       </button>
-      <div className="sm:block md:hidden absolute top-5 left-6">
-        <p className="font-semibold text-lg text-white">IL MONDO DI MARE</p>
-      </div>
+
       <AnimatePresence>
         {navActive && (
           <motion.nav
@@ -155,7 +153,7 @@ export default function Navbar({ openPopUp }) {
         <p>
           <Phone size={32} color="white" />
         </p>
-        <p className="text-white">+30 2682 026156</p>
+        <p className="text-white">+30 2682 025691</p>
       </div>
       <button
         onClick={() => navToggle()}
