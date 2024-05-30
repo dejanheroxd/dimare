@@ -37,17 +37,17 @@ export default function Contact({ closePopUp }) {
             </p>
             <div className="hidden lg:block">
               <p className="pb-6 text-lg xl:text-xl text-fishDarkBlue">
-                Σπηλιάδου 10 48100 Πρέβεζα
+                Αδριανουπόλεως, Πρέβεζα 481 00
               </p>
               <div className="text-lg xl:text-xl text-fishDarkBlue xl:flex xl:justify-center xl:gap-x-36 xl:w-full">
                 <div className="pb-6 xl:leading-9">
-                  <p className="w-[221px]">Δευτ - Παρ: 8:00 - 16:00</p>
-                  <p>Σάββατο: 8:00 - 16:00</p>
-                  <p>Κυριακή: 8:00 - 16:00</p>
+                  <p className="w-[229px]">Δευτ - Παρ: 11:00 - 23:00</p>
+                  <p>Σάββατο: 11:00 - 23:00</p>
+                  <p>Κυριακή: 10:00 - 22:00</p>
                 </div>
                 <div>
-                  <p>Ilmondo@gmail.com</p>
-                  <p>+30 2682 021761</p>
+                  <p>ventura@gmail.com</p>
+                  <p>+30 2682 029999</p>
                 </div>
               </div>
             </div>
